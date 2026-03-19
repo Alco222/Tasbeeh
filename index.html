@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 2</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+        body{
+            padding: 20px;
+            margin: 0;
+            background-image: url('images/tasbeeh-gold.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .logo
+        {
+            width: 120px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo img
+        {
+            width:80px;
+            height:80px;
+            border-radius: 50%;
+        }
+        .logo a
+        {
+            margin-top:.3rem ;
+            color: gold;
+            font-size: 1.2rem;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: .5s ease;
+        }
+        .logo a:hover
+        {
+           color: rgb(255, 234, 117);
+           transform: scale(1.03);
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(0, 0, 0);
+            text-align: center;
+            width: 40%;
+            height: 20vh;
+            border-radius: 10px;
+            border: 2px solid gold;
+            margin: 17rem auto;
+        }
+        #btn
+        {
+            width: 100px;
+            height: 40px;
+            border-radius: 10px;
+            border: 2px solid goldenrod;
+            color: black;
+            font: 600 1.5rem Georgia, Times, serif;
+            
+            background-color: goldenrod;
+            cursor: pointer;
+            transition: transform .3s ease;
+        }
+        #btn:hover{
+            transform: scale(1.03);
+            background-color: rgba(250, 213, 5, 0.938);
+        }
+        .container h1{
+            font-size: 2rem;
+            color: goldenrod;
+            text-wrap: wrap;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="logo">
+
+        <img src="images/icons8-github.gif" alt="">
+        <a href="https://github.com/Alco222" target="_blank"> My Github</a>
+    </div>
+    <div class="container">
+        <h1 id="Tasbeeh ">سبحان الله</h1>
+        <button id="btn" onclick="StartTasbeeh()">إبدأ</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
